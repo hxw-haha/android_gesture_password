@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="gesture_view_attrs">
+        <!-- 设置显示状态-->
+        <attr name="state">
+            <!-- 设置状态 默认状态 -->
+            <enum name="SET" value="100" />
+            <!-- 验证状态 -->
+            <enum name="VERIFY" value="101" />
+        </attr>
+        <!-- 验证次数 默认5-->
+        <attr name="verify_time" format="dimension" />
+        <!-- 限制最小点的位数 默认4 -->
+        <attr name="min_point" format="dimension" />
+        <!-- 点之间的距离,以及圆点的大小(倍数) 默认30-->
+        <attr name="point_dis" format="dimension" />
+    </declare-styleable>
+
+</resources>
