@@ -2,7 +2,8 @@
 首次提交 
 
 设置页面调用：
-    <com.example.gesture_password.view.GestureView
+    
+      <com.example.gesture_password.view.GestureView
         android:id="@+id/gesture_view_set"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,7 +20,8 @@
         });
        
   验证页面调用：
-    <com.example.gesture_password.view.GestureView
+        
+      <com.example.gesture_password.view.GestureView
         android:id="@+id/gesture_view_verify"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
