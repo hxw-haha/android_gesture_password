@@ -1,5 +1,22 @@
 # android_gesture_password
-首次提交 
+
+自定义样式：
+  
+    <declare-styleable name="gesture_view_attrs">
+        <!-- 设置显示状态-->
+        <attr name="state">
+            <!-- 设置状态 默认状态 -->
+            <enum name="SET" value="100" />
+            <!-- 验证状态 -->
+            <enum name="VERIFY" value="101" />
+        </attr>
+        <!-- 验证次数 默认5-->
+        <attr name="verify_time" format="dimension" />
+        <!-- 限制最小点的位数 默认4 -->
+        <attr name="min_point" format="dimension" />
+        <!-- 点之间的距离,以及圆点的大小(倍数) 默认30-->
+        <attr name="point_dis" format="dimension" />
+    </declare-styleable>
 
 设置页面调用：
     
@@ -43,9 +60,12 @@
             @Override
             public void onVerifyFailed(boolean isSetState) {
                 if (isSetState) {
+                    // 需要跳转到设置手机密码页面
+                    // 手机密码未设置、保证在本地密码被清空
                     startActivity(new Intent(VerifyActivity.this, SetActivity.class));
                     finish();
                 } else {
+                    // 输入错误密码操作次数
                     finish();
                     Toast.makeText(VerifyActivity.this, "验证失败了。。。", Toast.LENGTH_SHORT).show();
                 }
