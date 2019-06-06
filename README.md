@@ -18,6 +18,9 @@
                 finish();
             }
         });
+        
+ ![image](https://github.com/hxw-haha/android_gesture_password/raw/master/设置页面-1.png)
+ ![image](https://github.com/hxw-haha/android_gesture_password/raw/master/设置页面-2.png)
        
   验证页面调用：
         
@@ -48,4 +51,6 @@
                 }
             }
         });
+        
+   ![image](https://github.com/hxw-haha/android_gesture_password/raw/master/验证页面.png)
    
